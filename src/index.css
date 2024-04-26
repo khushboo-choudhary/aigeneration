@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ body {
+   margin: 0;
+   display: flex;
+   min-width: 320px;
+   justify-content: center;
+   align-items: center;
+ }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ :root {
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+   color-scheme: light dark;
+   color: rgba(255, 255, 255, 0.87);
+   background-color: #242424;
+   font-synthesis: none;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-text-size-adjust: 100%;
+   font-family: Inter, Avenir, Arial, Helvetica, sans-serif;
+ }
+
+ h1 {
+   font-size: 3.2em;
+   line-height: 1.1;
+ }
+
+ button,
+ input {
+   border-radius: 8px;
+   border: 1px solid transparent;
+   padding: 0.6em 1.2em;
+   font-size: 1em;
+   font-weight: 500;
+   font-family: inherit;
+   background-color: #1a1a1a;
+   color: white;
+   cursor: pointer;
+   transition: border-color 0.25s;
+ }
+
+ button:hover,
+ input:hover {
+   border-color: #646cff;
+ }
+
+ button:focus,
+ button:focus-visible,
+ input:focus,
+ input:focus-visible {
+   outline: 4px auto -webkit-focus-ring-color;
+ }
+
+ img {
+   border-radius: 8px;
+   border: #646cff solid thin;
+   max-width: 100%;
+   height: auto;
+ }
+
+ .imageBox {
+   margin: auto;
+   margin-top: 1rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+   gap: 20px;
+ }
+
+ .imageContainer {
+   width: 100%;
+   border-radius: 8px;
+ }
+
+ .profilePhoto {
+   margin-top: 50px;
+ }
+
+ .buyTokens {
+   margin-top: 50px;
+ }
+ .profile,
+ .voteButtons {
+   margin-top: 10px;
+ }
+
+ .tokenInput,
+ .voteButtons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+ }
+
+ code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+ }
